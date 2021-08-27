@@ -1,7 +1,123 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  height: 5000px;
+  background-color: #dae0e6;
+}
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 
+.img-logo {
+  width: 9rem;
+  height: 2.7rem;
+  object-fit: cover;
+  margin-top: 0.4rem;
+}
 
+.search-input {
+  display: flex;
+  width: 50%;
+  margin: 0.4rem 0;
+  transition: all 1s;
+  border-radius: 9px;
+  background-color: #dae0e648;
+  justify-content: space-around;
+}
+.search-input:hover {
+  border: 2px solid #138deb;
+}
+.search-field {
+  outline: none;
+  padding: 0.5rem;
+  width: 92%;
+  border: none;
+  font-size: 16px;
+  background-color: #dae0e609;
+}
+.fa-search {
+  padding: 0.5em 0.2em 0.3em 0.2em;
+  font-size: 22px;
+  opacity: 0.7;
+}
+.login-signup {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+.log-btn {
+  height: 2.1rem;
+  margin-right: 1rem;
+  width: 7rem;
+  background-color: white;
+  color: #0b7ed5;
+  font-size: 15px;
+  border-radius: 30px;
+  border: 2.5px solid #0b7ed5;
+  transition: all 1s;
+  cursor: pointer;
+  padding: 0.4rem 1.5rem;
+  text-decoration: none;
+}
+.log-btn:hover {
+  background-color: #0b7dd512;
+}
+
+.sign-btn {
+  height: 2.1rem;
+  width: 7rem;
+  background-color: #0b7ed5;
+  color: white;
+  font-size: 15px;
+  border-radius: 30px;
+  border: 2.5px solid #0b7ed5;
+  transition: all 1s;
+  cursor: pointer;
+  padding: 0.4rem 1.5rem;
+  text-decoration: none;
+}
+.sign-btn:hover {
+  background-color: #0b7dd5cd;
+}
+.fa-user {
+  opacity: 0.6;
+  padding: 9px 30px 2px 55px;
+  font-size: 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.login-hamb {
+  display: inline-block;
+}
+
+/************************ start heder media ********************/
+@media (max-width: 750px) {
+  .fa-user {
+    padding: 9px 15px 2px 20px;
+  }
+  .log-btn {
+    display: none;
+  }
+  .sign-btn {
+    display: none;
+  }
+  .search-input {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .fa-user {
+    padding: 9px;
+  }
+}
+/************************ end heder media ********************/
