@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signup-container {
+  position: relative;
+  box-shadow: 5px 5px 100px 10px rgb(137 137 137 / 10%);
+  height: 70vh;
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  position: relative;
+}
+.img-part > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 70vh;
+  width: 180px;
+  display: block;
+}
+.signup-part {
+  height: auto;
+  position: absolute;
+  left: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.btn-google > img {
+  width: 27px;
+  padding-left: 5px;
+}
+.btn-apple > img {
+  width: 27px;
+  padding-left: 5px;
+}
+.p-signup > h3 {
+  padding-bottom: 0.7rem;
+  opacity: 0.9;
+}
+.p-signup > p > span {
+  color: rgb(0, 121, 211);
+  cursor: pointer;
+}
+.p-signup > p {
+  padding-bottom: 3.7rem;
+  font-size: 14px;
+}
+
+.btn-google-apple-signup {
+  display: flex;
+  flex-direction: column;
+}
+.btn-google-apple-signup > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 285px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 2.5px solid rgba(0, 120, 211, 0.646);
+  border-radius: 5px;
+}
+.btn-google-apple-signup > p {
+  padding: 10px;
+}
+.btn-google > p {
+  color: rgb(10 90 236);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 13px;
+  transition: all 0.5s;
+}
+.btn-apple > p {
+  color: rgb(10 90 236);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 13px;
+  transition: all 0.5s;
+}
+
+.btn-google:hover {
+  background-color: rgba(0, 120, 211, 0.763);
+  color: white;
+  cursor: pointer;
+}
+.btn-google > p:hover {
+  color: white;
+}
+
+.btn-apple:hover {
+  background-color: rgba(0, 120, 211, 0.763);
+  color: white;
+  cursor: pointer;
+}
+.btn-apple > p:hover {
+  color: white;
+}
+.or-p {
+  padding: 1.5rem;
+  opacity: 0.7;
+  padding-left: 120px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+.signup-form > input[type='text'] {
+  margin-bottom: 10px;
+  padding: 0.5rem 0.3rem;
+  width: 285px;
+  height: 47px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(188, 188, 188, 0.907);
+  box-shadow: 3px 3px 12px rgb(194, 190, 190);
+}
+.signup-form > input[type='submit'] {
+  background-color: rgba(0, 120, 211, 0.886);
+  margin-top: 0;
+  padding: 0.1rem 0.3rem;
+  width: 285px;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 2.7rem;
+  outline: none;
+  border-radius: 28px;
+  border: 1px solid rgba(188, 188, 188, 0.907);
+  box-shadow: 3px 3px 12px rgb(194, 190, 190);
+  transition: all 0.5s;
+}
+.signup-form > input[type='submit']:hover {
+  background-color: rgba(0, 120, 211, 0.678);
+}
+.signup-forgot {
+  padding-bottom: 0.7rem;
+  font-size: 14px;
+  opacity: 0.9;
+}
+.signup-forgot > p > span {
+  color: rgb(0, 121, 211);
+  cursor: pointer;
+}
+.signup-new-reddit {
+  font-size: 15px;
+}
+.signup-new-reddit > p > span {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 121, 211);
+  cursor: pointer;
+}
+.signup-new-reddit > p > span > a {
+  text-decoration: none;
+  color: rgb(0, 121, 211);
+}
+.go-to-home{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: #bfe4fc;
+  border: 1px solid rgb(0, 121, 211);
+  transition: all 0.5s;
+  box-shadow: 0.2px 0.2px 20px 0.2px rgba(0, 120, 211, 0.461);
+}
+.go-to-home:hover{
+  background-color: #bfe4fca6;
+
+}
