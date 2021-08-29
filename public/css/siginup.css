@@ -7,7 +7,7 @@
 .signup-container {
   position: relative;
   box-shadow: 5px 5px 100px 10px rgb(137 137 137 / 10%);
-  height: 70vh;
+  height: auto;
   margin: 0 auto;
   width: 70%;
   display: flex;
@@ -25,7 +25,7 @@
   display: block;
 }
 .signup-part {
-  height: auto;
+  height: 0px;
   position: absolute;
   left: 230px;
   display: flex;
@@ -166,8 +166,8 @@
 }
 .go-to-home{
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: -67vh;
+  right: 0rem;
   text-decoration: none;
   color: black;
   font-weight: bold;

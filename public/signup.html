@@ -27,27 +27,48 @@
             <span>Privacy Policy</span>.
           </p>
         </div>
-        <div class="btn-google-apple-signup">
+        <!-- <div class="btn-google-apple-signup">
           <a class="btn-google">
-            <img src="../public/image/google.png" alt="google" />
+            <img src="./image/google.png" alt="google" />
             <p>Continue With Google</p>
           </a>
           <a class="btn-apple">
-            <img src="../public/image/apple.png" alt="google" />
+            <img src="./image/apple.png" alt="google" />
             <p>Continue With Apple</p>
           </a>
-        </div>
+        </div> 
         <div>
           <p class="or-p">OR</p>
-        </div>
-        <form action="/public/signup.html" class="signup-form">
+        </div> -->
+        <form action="/public/signup.html" class="signup-form" method="POST">
           <input
-            name="email"
+            name="Name"
             type="text"
             aria-selected="false"
-            placeholder="Email"
+            placeholder="name"
             required
           />
+          <input
+          name="user name"
+          type="text"
+          aria-selected="false"
+          placeholder="User Name"
+          required
+        />
+        <input
+        name="email"
+        type="text"
+        aria-selected="false"
+        placeholder="Email"
+        required
+      />
+      <input
+      name="password"
+      type="text"
+      aria-selected="false"
+      placeholder="Password"
+      required
+    />
           <input type="submit" aria-selected="false" value="Continue" />
         </form>
         <div class="signup-new-reddit">

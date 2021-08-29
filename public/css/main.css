@@ -278,6 +278,12 @@ header {
   width: 86px;
   height: 2.4rem;
   background-color: #f6f7f8;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.hot-icon:hover{
+  background-color: #e4e4e4;
+
 }
 .fa-hotjar {
   color: #0272c5;
@@ -298,11 +304,17 @@ header {
   border-radius: 15px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 .new-icon {
   border-radius: 15px;
   width: 86px;
   height: 2.4rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.new-icon:hover{
+  background-color: #e4e4e4;
 }
 .fa-sun {
   color: #a6a8a9;
@@ -318,6 +330,11 @@ header {
   border-radius: 15px;
   width: 86px;
   height: 2.4rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.top-icon:hover{
+  background-color: #e4e4e4;
 }
 .fa-arrow-to-top {
   color: #a6a8a9;
@@ -333,7 +350,9 @@ header {
   color: #a6a8a9;
   padding-right: 1rem;
   font-size: 20px;
+  cursor: pointer;
 }
+
 /************************ end Popular posts ********************/
 
 /************************ start Popular posts media ********************/
