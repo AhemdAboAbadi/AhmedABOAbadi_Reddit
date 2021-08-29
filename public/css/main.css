@@ -7,6 +7,7 @@ body {
   background-color: #dae0e6;
 }
 header {
+  z-index: 10;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -585,7 +586,7 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
-.post-part-1 > button {
+.post-part-1 > button  {
   background-color: #0089f2;
   color: white;
   padding: 0.3rem 1rem;
@@ -595,6 +596,10 @@ header {
   cursor: pointer;
   transition: all 0.5s;
   margin-left: 2rem;
+}
+.post-part-1 > button > a {
+  text-decoration: none;
+  color: white;
 }
 .post-part-1 > button > i {
   padding-right: 0.5rem;

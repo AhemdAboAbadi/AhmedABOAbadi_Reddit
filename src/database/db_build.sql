@@ -16,7 +16,6 @@ CREATE TABLE posts (
     content VARCHAR(2000) NOT NULL,
     imageUrl VARCHAR(2000) NOT NULL,
 );
-user_id ,title ,content , imageUrl
 INSERT INTO userss (name, email, username, password) VALUES
 ('Ahmed AboAbadi' , 'ahmedabadi@gmail.com', 'asdasd01' ,'123456789'),
 ('nizar zakout' , 'nizar@gmail.com', 'nizar01' ,'123456789'),
