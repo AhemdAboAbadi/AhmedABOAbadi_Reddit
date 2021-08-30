@@ -112,7 +112,8 @@
   display: flex;
   flex-direction: column;
 }
-.log-form > input[type='text'] {
+.log-form > input[type='email'],
+.log-form > input[type='password'] {
   margin-bottom: 10px;
   padding: 0.5rem 0.3rem;
   width: 285px;

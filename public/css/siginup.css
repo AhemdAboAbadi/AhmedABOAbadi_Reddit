@@ -5,29 +5,25 @@
 }
 
 .signup-container {
-  position: relative;
   box-shadow: 5px 5px 100px 10px rgb(137 137 137 / 10%);
   height: auto;
   margin: 0 auto;
   width: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 5rem;
   position: relative;
 }
 .img-part > img {
-  position: absolute;
-  left: 0;
-  top: 0;
   height: 70vh;
   width: 180px;
   display: block;
 }
 .signup-part {
-  height: 0px;
-  position: absolute;
-  left: 230px;
+  padding: 0.5rem 0;
+  height: 70vh;
+  margin-left: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,7 +109,9 @@
   display: flex;
   flex-direction: column;
 }
-.signup-form > input[type='text'] {
+.signup-form > input[type='text'],
+.signup-form > input[type='password'],
+.signup-form > input[type='email'] {
   margin-bottom: 10px;
   padding: 0.5rem 0.3rem;
   width: 285px;
@@ -164,10 +162,10 @@
   text-decoration: none;
   color: rgb(0, 121, 211);
 }
-.go-to-home{
+.go-to-home {
   position: absolute;
-  bottom: -67vh;
-  right: 0rem;
+  right: 1rem;
+  bottom: 1rem;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -178,7 +176,11 @@
   transition: all 0.5s;
   box-shadow: 0.2px 0.2px 20px 0.2px rgba(0, 120, 211, 0.461);
 }
-.go-to-home:hover{
+.go-to-home:hover {
   background-color: #bfe4fca6;
-
+}
+.go-home {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
