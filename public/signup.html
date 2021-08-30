@@ -40,16 +40,16 @@
         <div>
           <p class="or-p">OR</p>
         </div> -->
-        <form action="/public/signup.html" class="signup-form" method="POST">
+        <form method="POST" action="/signup" class="signup-form" >
           <input
-            name="Name"
+            name="flName"
             type="text"
             aria-selected="false"
             placeholder="name"
             required
           />
           <input
-          name="user name"
+          name="userName"
           type="text"
           aria-selected="false"
           placeholder="User Name"
@@ -57,14 +57,14 @@
         />
         <input
         name="email"
-        type="text"
+        type="email"
         aria-selected="false"
         placeholder="Email"
         required
       />
       <input
       name="password"
-      type="text"
+      type="password"
       aria-selected="false"
       placeholder="Password"
       required
@@ -77,8 +77,11 @@
           </p>
         </div>
       </div>
-      <a class="go-to-home" href="./index.html"> Go To Home</a>
+      <div class="go-home">
+        <a class="go-to-home" href="./index.html"> Go To Home</a>
+      </div>
     </div>
-    <!-- <script src="./js/dom.js"></script> -->
+    <script src="./js/signup.js"></script>
+
   </body>
 </html>
