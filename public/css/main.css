@@ -71,7 +71,21 @@ header {
 .log-btn:hover {
   background-color: #0b7dd512;
 }
-
+.user-from-fetch{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+}
+.log-out-form > button{
+  background-color: transparent;
+  padding-right: 1rem;
+  border: none;
+  color: red;
+  opacity: 0.9;}
 .sign-btn {
   height: 2.1rem;
   width: 7rem;
@@ -95,6 +109,15 @@ header {
   display: block;
   cursor: pointer;
 }
+.fa-sign-out-alt {
+  opacity: 0.6;
+  padding: 9px 30px 2px 20x;
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+
+}
+
 
 /************************ start heder media ********************/
 @media (max-width: 750px) {
@@ -282,9 +305,8 @@ header {
   transition: all 0.5s;
   cursor: pointer;
 }
-.hot-icon:hover{
+.hot-icon:hover {
   background-color: #e4e4e4;
-
 }
 .fa-hotjar {
   color: #0272c5;
@@ -314,7 +336,7 @@ header {
   cursor: pointer;
   transition: all 0.5s;
 }
-.new-icon:hover{
+.new-icon:hover {
   background-color: #e4e4e4;
 }
 .fa-sun {
@@ -334,7 +356,7 @@ header {
   cursor: pointer;
   transition: all 0.5s;
 }
-.top-icon:hover{
+.top-icon:hover {
   background-color: #e4e4e4;
 }
 .fa-arrow-to-top {
@@ -586,7 +608,7 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
-.post-part-1 > button  {
+.post-part-1 > button {
   background-color: #0089f2;
   color: white;
   padding: 0.3rem 1rem;
