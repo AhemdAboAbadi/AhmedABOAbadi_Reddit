@@ -14,26 +14,24 @@ const checkLogin = (req, res) => {
     .then((result) => {
       if (result.rowCount) {
         getHash(email).then((hash) =>
-          comparePassword(password, hash.rows[0].password, (err, result) => {
-            if (result) {
+          comparePassword(password, hash.rows[0].password, (err, resultA) => {
+            if (resultA) {
               console.log('you are logged');
 
-              jwt.sign({ is_Admin: true }, 'token', (error, token) => {
-                if (error) {
-                  console.log(error);
-                  res.status(500).json({ msg: 'Internal Server Error !' });
-                } else {
-                  console.log('the token', token);
-                  res
-                    .cookie('token', token, {
-                      httpOnly: true,
-                      secure: true,
-                    })
-                    .cookie('login', true)
-                    .redirect('/index.html');
+              jwt.sign(
+                { is_Admin: true, email: result.rows[0].email },
+                'token',
+                (error, token) => {
+                  if (error) {
+                    console.log(error);
+                    res.status(500).json({ msg: 'Internal Server Error !' });
+                  } else {
+                    res.cookie('token', token).redirect('/index.html');
+                    console.log('the token :', token);
+                  }
                 }
-              });
-              res.redirect('/index.html');
+              );
+              // res.redirect('/index.html');
             } else {
               console.log('email or password are Incorrect');
               res.send('email or password are Incorrect');
