@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const jwt = require('jsonwebtoken');
 const loginQuery = require('../database/quires/loginQuery');
 const { comparePassword } = require('../utils/hashPassword');
@@ -19,11 +20,16 @@ const checkLogin = (req, res) => {
               console.log('you are logged');
 
               jwt.sign(
-                { is_Admin: true, email: result.rows[0].email },
+                {
+                  is_Admin: true,
+                  email: result.rows[0].email,
+                  id: result.rows[0].id,
+                  username: result.rows[0].username,
+                },
                 'token',
-                (error, token) => {
-                  if (error) {
-                    console.log(error);
+                (erro, token) => {
+                  if (erro) {
+                    console.log(erro);
                     res.status(500).json({ msg: 'Internal Server Error !' });
                   } else {
                     res.cookie('token', token).redirect('/index.html');
