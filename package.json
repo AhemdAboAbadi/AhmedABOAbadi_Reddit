@@ -7,7 +7,7 @@
     "dev": "NODE_ENV=development nodemon src/index.js ",
     "start": "NODE_ENV=production node src/index.js",
     "test": "NODE_ENV=test jest",
-    "kill": "kill -9 $(lsof -t -i:3000)"
+    "kill": "kill -9 $(lsof -t -i:7000)"
   },
   "repository": {
     "type": "git",

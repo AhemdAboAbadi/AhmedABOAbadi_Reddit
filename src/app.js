@@ -16,7 +16,7 @@ app.use(compression());
 app.use(express.json());
 app.use(express.static(join(__dirname, '..', 'public')));
 
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 7000);
 
 app.use(router);
 
