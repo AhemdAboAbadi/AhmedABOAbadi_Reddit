@@ -27,48 +27,43 @@
             <span>Privacy Policy</span>.
           </p>
         </div>
-        <!-- <div class="btn-google-apple-signup">
-          <a class="btn-google">
-            <img src="./image/google.png" alt="google" />
-            <p>Continue With Google</p>
-          </a>
-          <a class="btn-apple">
-            <img src="./image/apple.png" alt="google" />
-            <p>Continue With Apple</p>
-          </a>
-        </div> 
-        <div>
-          <p class="or-p">OR</p>
-        </div> -->
-        <form method="POST" action="/signup" class="signup-form" >
+        <form method="POST" action="/signup" class="signup-form">
           <input
+            class="form-name"
             name="flName"
             type="text"
             aria-selected="false"
             placeholder="name"
-            required
           />
           <input
-          name="userName"
-          type="text"
-          aria-selected="false"
-          placeholder="User Name"
-          required
-        />
-        <input
-        name="email"
-        type="email"
-        aria-selected="false"
-        placeholder="Email"
-        required
-      />
-      <input
-      name="password"
-      type="password"
-      aria-selected="false"
-      placeholder="Password"
-      required
-    />
+            class="form-userName"
+            name="userName"
+            type="text"
+            aria-selected="false"
+            placeholder="User Name"
+          />
+          <input
+            class="form-email"
+            name="email"
+            type="email"
+            aria-selected="false"
+            placeholder="Email"
+          />
+          <input
+            class="form-password"
+            name="password"
+            type="password"
+            aria-selected="false"
+            placeholder="Password"
+          />
+          <input
+            class="form-confirm-password"
+            name="password"
+            type="password"
+            aria-selected="false"
+            placeholder="confirm Password"
+          />
+          <p class="error-massage"></p>
           <input type="submit" aria-selected="false" value="Continue" />
         </form>
         <div class="signup-new-reddit">
@@ -82,6 +77,5 @@
       </div>
     </div>
     <script src="./js/signup.js"></script>
-
   </body>
 </html>

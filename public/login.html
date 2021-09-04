@@ -40,21 +40,22 @@
         <div>
           <p class="or-p">OR</p>
         </div>
-        <form action="/login" class="log-form" method="POST">
+        <form action="/login" class="log-form" method="POST" >
           <input
             name="email"
             type="email"
             aria-selected="false"
             placeholder="Email"
-            required
+            class="form-email"
           />
           <input
             name="password"
             type="password"
             aria-selected="false"
-            placeholder="PASSWORD"
-            required
+            placeholder="password"
+          class="form-password"
           />
+          <p class="error-massage"></p>
           <input type="submit" aria-selected="false" value="Log In" />
         </form>
         <div class="log-forgot">
@@ -68,6 +69,5 @@
       </div>
     </div>
     <script src="./js/login.js"></script>
-
   </body>
 </html>

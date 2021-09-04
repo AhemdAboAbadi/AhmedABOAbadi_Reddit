@@ -24,7 +24,6 @@ fetch('/profileUser')
   })
   .then((response) => response.json())
   .then((data) => {
-    console.log(data.posts[0]);
     const home = document.querySelector('.user-posts');
 
     data.posts.forEach((post) => {
@@ -60,5 +59,4 @@ fetch('/profileUser')
       `;
       home.appendChild(mainHome);
     });
-    console.log('ssssssssssssssssssssssssssss');
   });

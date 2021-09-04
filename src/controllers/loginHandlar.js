@@ -14,50 +14,33 @@ const checkLogin = (req, res) => {
   loginQuery(email)
     .then((result) => {
       if (result.rowCount) {
-        getHash(email).then((hash) =>
-          comparePassword(password, hash.rows[0].password, (err, resultA) => {
-            if (resultA) {
-              console.log('you are logged');
-
-              jwt.sign(
-                {
-                  is_Admin: true,
-                  email: result.rows[0].email,
-                  id: result.rows[0].id,
-                  username: result.rows[0].username,
-                },
-                'token',
-                (erro, token) => {
-                  if (erro) {
-                    console.log(erro);
-                    res.status(500).json({ msg: 'Internal Server Error !' });
-                  } else {
-                    res.cookie('token', token).redirect('/index.html');
-                    console.log('the token :', token);
-                  }
+        getHash(email).then((hash) => comparePassword(password, hash.rows[0].password, (err, resultA) => {
+          if (resultA) {
+            jwt.sign(
+              {
+                is_Admin: true,
+                email: result.rows[0].email,
+                id: result.rows[0].id,
+                username: result.rows[0].username,
+              },
+              'token',
+              (erro, token) => {
+                if (erro) {
+                  res.status(500).json({ msg: 'Internal Server Error !' });
+                } else {
+                  res.cookie('token', token).redirect('/index.html');
                 }
-              );
-              // res.redirect('/index.html');
-            } else {
-              console.log('email or password are Incorrect');
-              res.send('email or password are Incorrect');
-            }
-          })
-        );
+              },
+            );
+          } else {
+            res.send('email or password are Incorrect');
+          }
+        }));
       } else {
-        console.log('email or password are Incorrect');
         res.redirect(301, '/login.html');
       }
     })
     .catch((erro) => console.log(erro));
 };
-//   console.log(email);
-//   console.log(password);
-//   loginQuery(email)
-//     .then((result) => {
-//       console.log(email);
-//       console.log(result.rows);
-//     })
-//     .catch((err) => console.log(err));
 
 module.exports = checkLogin;
