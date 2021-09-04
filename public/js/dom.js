@@ -30,20 +30,13 @@ const logOutForm = document.querySelector('.log-out-form');
 fetch('/profileUser')
   .then((response) => response.json())
   .then((theData) => {
-    console.log('the Data ' + theData);
-    console.log('1112');
-    console.log('asdasd');
     if (document.cookie !== '') {
       userFromFetch.textContent = theData.user.username;
-      console.log('11111111111111');
-      console.log(theData.user.username);
       logBtn.style.display = 'none';
       signUpBtn.style.display = 'none';
       for (let i = 0, len = joinBtn.length; i < len; i++) {
         joinBtn[i].style.display = 'none';
-        console.log(i);
       }
-      // console.log(joinBtn[]);
       btnLogSign.style.display = 'none';
       faSignOutAlt.style.display = 'block';
       btnLogSign.addEventListener('click', (e) => {

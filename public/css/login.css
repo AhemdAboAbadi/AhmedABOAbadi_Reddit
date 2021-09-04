@@ -160,3 +160,10 @@
   text-decoration: none;
   color: rgb(0, 121, 211);
 }
+
+.error-massage{
+  padding: 0.5rem 0;
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}

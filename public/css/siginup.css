@@ -184,3 +184,9 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+.error-massage {
+  padding: 0.5rem 0;
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
