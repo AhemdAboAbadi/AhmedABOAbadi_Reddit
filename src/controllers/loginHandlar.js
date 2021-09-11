@@ -44,3 +44,8 @@ const checkLogin = (req, res) => {
 };
 
 module.exports = checkLogin;
+
+// select cd.name , cd.price from cd inner join cd_songs on cd_songs.cd_id =cd.id 
+// inner join song on cd_songs.song_id = song.id
+// inner join artist on song.artist_id = artist.id
+// where artist.name='Story of the year';
