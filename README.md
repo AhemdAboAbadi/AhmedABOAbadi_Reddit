@@ -1,6 +1,6 @@
 # AhmedABOAbadi_Reddi
 
-## Live Demo :tv: [Go Live](https://ahmedredditt.herokuapp.com/) 
+## Live Demo :tv: [Go Live](https://abadi-reddit-clone.herokuapp.com/) 
 
 
 ## User Stories :Book:
